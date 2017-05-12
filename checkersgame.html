@@ -1,0 +1,124 @@
+<body onload="draw()">
+<canvas id="sketch" width="300" height="300">
+</canvas>
+<script>
+function draw(){
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	context.fillStyle = "#000000"
+
+
+//for boarder line 
+	context.fillStyle = "#000000"
+	context.fillRect(10,282,300,2);
+
+	context.fillStyle = "#000000"
+	context.fillRect(10,0,300,2);
+
+	context.fillStyle = "#000000"
+	context.fillRect(10,0,2,282);
+
+	context.fillStyle = "#000000"
+	context.fillRect(298,0,2,282);
+
+//for squares 
+for(j=0; j<=4; j=j+1){
+	context.fillRect(47+j*72,2,35,35);
+
+}
+for(j=0; j<=4; j=j+1){
+	context.fillRect(11+j*72,37,35,35);
+
+}
+
+for(j=0; j<=4; j=j+1){
+	context.fillRect(47+j*72,72,35,35);
+
+}
+
+for(j=0; j<=4; j=j+1){
+	context.fillRect(11+j*72,107,35,35);
+
+}
+
+for(j=0; j<=4; j=j+1){
+	context.fillRect(47+j*72,142,35,35);
+
+}
+
+for(j=0; j<=4; j=j+1){
+	context.fillRect(11+j*72,177,35,35);
+
+}
+for(j=0; j<=4; j=j+1){
+	context.fillRect(47+j*72,212,35,35);
+
+}
+for(j=0; j<=4; j=j+1){
+	context.fillRect(11+j*72,247,35,35);
+
+}
+
+//for circles (checkerd pieces)
+for(j=0; j<=4; j=j+1){
+context.fillStyle = "ff0000"
+	context.beginPath();
+	context.arc(65+j*72,17,15, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+
+}
+for(j=0; j<=4; j=j+1){
+context.fillStyle = "ff0000"
+	context.beginPath();
+	context.arc(28+j*72,54,15, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+
+}
+for(j=0; j<=4; j=j+1){
+context.fillStyle = "ff0000"
+	context.beginPath();
+	context.arc(65+j*72,89,15, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+
+}
+for(j=0; j<=4; j=j+1){
+context.fillStyle = "0000ff"
+	context.beginPath();
+	context.arc(28+j*72,195,15, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+
+}
+for(j=0; j<=4; j=j+1){
+context.fillStyle = "0000ff"
+	context.beginPath();
+	context.arc(65+j*72,229,15, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+
+}
+for(j=0; j<=4; j=j+1){
+context.fillStyle = "0000ff"
+	context.beginPath();
+	context.arc(28+j*72,265,15, 0, 2 * Math.PI, true);
+	context.closePath();
+	context.fill();
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
